@@ -22,10 +22,10 @@ jobs:
 
     - name: Run sign-in script
       env:
-        COOKIES: tVlG_2132_ulastactivity=c818QDKtl2YEP19RbNSKQnKrH9vw5YKiOJn%2FAGYCUoIXfQl4amVS; tVlG_2132_lastcheckfeed=11448%7C1741587257; tVlG_2132_visitedfid=18D16D21D17D3; tVlG_2132_smile=1D1; tVlG_2132_forum_lastvisit=D_17_1740713736D_21_1740979887D_16_1740986980D_18_1741395139; tVlG_2132_saltkey=EJbTN77J; tVlG_2132_lastvisit=1741583648; tVlG_2132_sid=b4aXas; tVlG_2132_lastact=1741587278%09plugin.php%09; X_CACHE_KEY=0ffac48a2c6347762480e9b06c5c99ed; tVlG_2132_auth=ff04MqzzfGFSXIdCLjO%2FiCrXvhLHsfnceH3PGj%2FLbvXc7RSbcjATapTp4M8zly2YbpUQ0DeW0AoZfEvAB4zClgGO1w
-        BASE_URL: https://www.aibj.fun/
-        QDXQ: kx
-        TODAYSAY: 我我我
+        COOKIES: ${{ secrets.COOKIES }}
+        BASE_URL: ${{ secrets.BASE_URL }}
+        QDXQ: ${{ secrets.QDXQ }}
+        TODAYSAY: ${{ secrets.TODAYSAY }}
         SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
         SMTP_PORT: ${{ secrets.SMTP_PORT }}
         SMTP_USER: ${{ secrets.SMTP_USER }}
